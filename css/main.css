@@ -1,0 +1,266 @@
+* {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+	float: none;
+}
+
+
+/**
+ * Body
+ */
+
+body {
+	font-family: "Arial", sans-serif;
+	background-color: #212121;
+	margin: 0;
+}
+
+
+/**
+ * Wrapper
+ */
+
+div.wrapper {
+	margin-top: 64px;
+	background-color: #666c6f;
+	background-image: url("../images/brick-wall-dark.png");
+	background-repeat: repeat;
+}
+
+
+/**
+ * Wrapper
+ */
+
+aside.image-break {
+	height: 320px;
+	background-position: center;
+	background-size: cover;
+}
+
+
+/**
+ * Navbar
+ */
+
+nav.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 0.75em;
+	background-color: #212121;
+	text-align: right;
+	-webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	font-size: 1.5em;
+}
+
+nav.navbar a.link,
+nav.navbar a.brand {
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin: 0 1em;
+}
+
+nav.navbar a.brand {
+	float: left;
+	font-family: "Times", serif;
+	letter-spacing: 0.1em;
+}
+
+
+/**
+ * Header
+ */
+
+header.header {
+	width: 100%;
+	height: 55vh;
+	min-height: 420px;
+	background-image: url("../images/img-4.jpeg");
+	background-position: center;
+	background-size: cover;
+	color: #ffffff;
+	text-align: center;
+	font-family: "Times", serif;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	text-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+header.header div.inner {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+header.header h1.title {
+	font-size: 4em;
+	margin: 0;
+	margin-bottom: 0.5em;
+}
+
+header.header h1.subtitle {
+	font-size: 2em;
+	margin: 0;
+}
+
+
+/**
+ * Container
+ */
+
+div.container {
+	width: 968px;
+	max-width: 100%;
+	margin: 4em auto;
+	padding: 4em 2em;
+	background-color: #f2efd9;
+	color: #282828;
+	-webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	border-radius: .25rem;
+}
+
+@media (max-width: 1000px) {
+	div.container {
+		margin: 1em !important;
+		width: calc(100% - 2em);
+	}
+}
+
+@media (max-width: 868px) {
+	section#contact div.column {
+		width: 100% !important;
+		float: none !important;
+	}
+	section#contact div.column:nth-child(2) {
+		margin-top: 2em;
+	}
+}
+
+@media (max-width: 645px) {
+	nav.navbar a.brand {
+		display: none;
+	}
+	nav.navbar {
+		text-align: center;
+	}
+}
+
+
+/**
+ * Footer
+ */
+
+footer.footer {
+	background-color: #212121;
+	color: #ffffff;
+	text-align: center;
+	padding: 2em;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+div.ryanapil {
+	background-color: #212121;
+	color: #ffffff;
+	text-align: center;
+	padding: 2em;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	padding-top: 0;
+}
+
+footer.footer p,
+div.ryanapil p {
+	margin: 0;
+}
+
+div.ryanapil a,
+footer.footer a {
+	color: inherit;
+	text-decoration: none;
+}
+
+div.ryanapil a:hover,
+footer.footer a:hover {
+	border-bottom: 1px solid;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+tr {
+  background: #f5f3e2;
+}
+th {
+  background: #212121;
+  color: #ffffff;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+td, th {
+  padding: 0.5em;
+  border: 1px solid #ffffff;
+  text-align: left;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-family: "Times", serif;
+	letter-spacing: 0.05em;
+	font-size: 2.5em;
+	margin: 0;
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+h3 {
+	font-size: 1.5em;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	font-family: "Times", serif;
+	margin: 0;
+	margin-bottom: 1em;
+	margin-top: 2em;
+}
+
+section#contact div.column {
+	float: left;
+	width: 50%;
+}
+
+section#contact a.link {
+	color: inherit;
+	text-decoration: none;
+	line-height: 1.25;
+}
+
+section#contact a.link:hover {
+	border-bottom: 1px solid;
+}
+
+section#map {
+	margin-bottom: -5px;
+}
